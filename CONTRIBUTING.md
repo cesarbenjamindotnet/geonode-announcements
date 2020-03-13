@@ -89,7 +89,7 @@ Here is an example of these rules applied:
     
     # second set of imports are Django imports with contrib in their own
     # group.
-    from django.core.urlresolvers import reverse
+    from django.urls import reverse
     from django.db import models
     from django.utils import timezone
     from django.utils.translation import ugettext_lazy as _
@@ -108,7 +108,7 @@ Here is an example of these rules applied:
         A model for storing a task.
         """
         
-        creator = models.ForeignKey(User)
+        creator = models.ForeignKey(User, on_delete=models.CASCADE)
         created = models.DateTimeField(default=timezone.now)
         modified = models.DateTimeField(default=timezone.now)
         
