@@ -1,6 +1,6 @@
-import django.dispatch
+from django.dispatch import Signal
 
 
-announcement_created = django.dispatch.Signal(providing_args=["announcement", "request"])
-announcement_updated = django.dispatch.Signal(providing_args=["announcement", "request"])
-announcement_deleted = django.dispatch.Signal(providing_args=["announcement", "request"])
+announcement_created = Signal()
+announcement_updated = Signal()
+announcement_deleted = Signal()
