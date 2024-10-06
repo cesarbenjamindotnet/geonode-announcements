@@ -1,3 +1,5 @@
+This repo was forked to fix compatibility issues with geonode and django 4.2.x. Geonode 4.3.1 now is fully compatible, so, i have to archive this repo and delete it on Jan 2025.
+
 Some sites need the ability to broadcast an announcement to all of their
 users. django-announcements was created precisely for this reason. How you
 present the announcement is up to you as the site-developer. When working with
